@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"log"
 	"runtime"
+
+	"./msquare"
 )
 
 const (
@@ -46,7 +48,7 @@ func main() {
 		return
 	}
 
-	s := NewMSquare(*sp, *pp)
+	s := msquare.NewMSquare(*sp, *pp)
 
 	if solved := s.Solve(); solved {
 		fmt.Printf("Solved:\n")
