@@ -31,6 +31,7 @@ func NewMSquare(s int, p bool) *MSquare {
 	log.Print("Square created\n")
 	log.Printf("Magic Num=%d\n", m.Num)
 	log.Printf("Square=%v\n", m.M)
+	log.Printf("Nums=%v\n", m.List)
 
 	return &m
 }
